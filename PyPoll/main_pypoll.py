@@ -1,3 +1,7 @@
+# main_pypoll.py
+# Andrew Lounsbury
+# 3/16/23
+# Purpose: module 3 for Vanderbilt Data Analytics Bootcamp; processes data in given election_data.csv
 import os, csv
 
 csvpath = os.path.join('Resources', 'election_data.csv')

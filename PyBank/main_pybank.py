@@ -1,3 +1,7 @@
+# main_pybank.py
+# Andrew Lounsbury
+# 3/16/23
+# Purpose: module 3 for Vanderbilt Data Analytics Bootcamp; processes data in given budget_data.csv
 import os, csv
 
 csvpath = os.path.join('Resources', 'budget_data.csv')
