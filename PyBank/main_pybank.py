@@ -13,7 +13,7 @@ with open(csvpath) as csvfile:
     numMonths = 0
     netChange = 0
     maxChange = -1
-    minChange = 9999999999
+    minChange = 999999999999
     for row in csvreader:
         numMonths += 1
         netChange += int(row[1])
