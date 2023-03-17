@@ -11,6 +11,7 @@ csvpath = os.path.join('PyBank', 'Resources', 'budget_data.csv')
 # opening and reading budget_data.csv
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
+    # storing the header
     csv_header = next(csvreader)
     
     # looping through the records, computing minimum and maximum changes
@@ -56,6 +57,7 @@ csvpath = os.path.join('PyPoll', 'Resources', 'election_data.csv')
 # opening and reading election_data.csv
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
+    # storing the header
     csv_header = next(csvreader)
     
     # list for counting votes for each candidate
