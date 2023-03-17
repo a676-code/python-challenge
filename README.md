@@ -2,7 +2,7 @@
 ## Andrew Lounsbury
 Module 3 challenge for Vanderbilt Data Analytics Bootcamp
 # PyBank
-We apply `main_pybank.py` to the data in `budget_data.csv` to obtain the following results: 
+We apply `main.py` to the data in `budget_data.csv` to obtain the following results: 
 ### Financial Analysis
 ---------------------
 | Description | Value |
@@ -13,7 +13,7 @@ We apply `main_pybank.py` to the data in `budget_data.csv` to obtain the followi
 |<span style="color:green"> Greatest Increase in Profits </span> | <span style="color:green"/> Mar-13 (\$1141840) </span>
 |<span style="color:red"> Greatest Decrease in Profits </span>| <span style="color:red"> Dec-10 (\$-1194133) </span>
 # PyPoll
-We apply `main_pypoll.py` to the data in `election_data.csv` to obtain the following results: 
+We apply `main.py` to the data in `election_data.csv` to obtain the following results: 
 ### Election Results
 --------------------------
 | Description | Value |
