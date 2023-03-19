@@ -14,7 +14,7 @@ with open(csvpath) as csvfile:
     # storing the header
     csv_header = next(csvreader)
     
-    # looping through the records, computing minimum and maximum changes
+    # looping through the records, computing net change, minimum change, and maximum change, storing both the value and the date
     numMonths = 0
     netChange = 0
     maxChange = -1

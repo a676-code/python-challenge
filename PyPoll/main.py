@@ -16,16 +16,18 @@ with open(csvpath) as csvfile:
     # list for counting votes for each candidate
     votes = [0, 0, 0]
     numVotes = 0
-    # looping through the records, computing the total number of votes and the votes for each candidate
+    # looping through the records
     for row in csvreader:
+        # counting the total number of votes
         numVotes += 1
+        # counting the votes for each candidate
         if row[2] == "Charles Casper Stockham":
             votes[0] += 1
         elif row[2] == "Diana DeGette":
             votes[1] += 1
         elif row[2] == "Raymon Anthony Doane":
             votes[2] += 1
-        else:
+        else: # in case any other name is entered
             print("Error: extra candidate")
             
     # computing the percentage of votes for each candidate
@@ -43,7 +45,7 @@ with open(csvpath) as csvfile:
     else:
         print("Error calculating winner")
     
-    # printing the results
+    # printing the results with the percentages rounded to the third decimal place
     print("\nElection Results")
     print("--------------------------")
     print("Total Votes: " + str(numVotes))
