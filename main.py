@@ -29,12 +29,16 @@ with open(csvpath) as csvfile:
             minChangeDate = row[0]
             minChange = int(row[1])
     
+    # computing the average change and rounding it to the second decimal place
+    average = round(netChange / numMonths, 2)
+    
     # printing the results
     print("Financial Analysis")
     print("-----------------------------------")
     print("Total Months: " + str(numMonths))
     print("Total: $" + str(netChange))
-    print("Average Change: $" + str(netChange / numMonths))
+    # The following line prints the average with 2 decimal places so that it prints $262374.40 rather than $262374.4
+    print("Average Change: $" + "{:.2f}".format(average))
     print("Greatest Increase in Profits: " + maxChangeDate + " ($" + str(maxChange) + ")")
     print("Greatest Decrease in Profits: " + minChangeDate + " ($" + str(minChange) + ")")
     
